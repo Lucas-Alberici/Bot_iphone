@@ -1,1 +1,26 @@
-# workflow básico
+name: Rodar Bot iPhone agendado
+
+on:
+  schedule:
+    - cron: '0 12,21 * * *'  # Roda às 9h e 18h de Brasília (UTC-3)
+  workflow_dispatch:         # Permite rodar manualmente também
+
+jobs:
+  rodar-bot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clonar repositório
+        uses: actions/checkout@v3
+
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+
+      - name: Instalar dependências
+        run: pip install -r requirements.txt
+
+      - name: Rodar o bot
+        env:
+          TOKEN: ${{ secrets.TOKEN }}
+        run: python iphone_bot2.py
