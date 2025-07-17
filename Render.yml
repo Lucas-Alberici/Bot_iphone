@@ -1,0 +1,5 @@
+services:
+  - type: cron
+    name: bot-iphone
+    schedule: "0 */3 * * *"  # a cada 3 horas
+    command: "python bot.py"
