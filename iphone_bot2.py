@@ -15,7 +15,6 @@ from telegram.ext import (
     filters,
     CallbackQueryHandler,
 )
-app = ApplicationBuilder().token(TOKEN).build()
 # --- Configurações ---
 TOKEN = os.getenv("7830838632:AAHjX5BMXKurcGUzzMx86ql8Bmo7dOqBj_s")
 PASTA_MODELOS = "modelos"
