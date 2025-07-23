@@ -2,7 +2,7 @@ name: Rodar Bot iPhone agendado
 
 on:
   schedule:
-    - cron: '0 12,21 * * *' # Executa todo dia às 12:00 e 21:00 UTC (ajuste o horário!)
+    - cron: '0 09,21 * * *' # Executa todo dia às 12:00 e 21:00 UTC (ajuste o horário!)
   workflow_dispatch: # permite rodar manualmente também
 
 jobs:
