@@ -16,7 +16,7 @@ from telegram.ext import (
     CallbackQueryHandler,
 )
 # --- Configurações ---
-TOKEN = os.getenv("BOT_TOKEN")
+TOKEN = os.getenv("TOKEN")
 PASTA_MODELOS = "modelos"
 PASTA_IMAGENS = "imagens"
 ARQ_MODELOS = "modelos.json"
