@@ -22,5 +22,5 @@ jobs:
 
       - name: Rodar o bot
         env:
-          TOKEN: ${{ secrets.7830838632:AAGFs8gp1HWKzvY-Zjl959D4XApMvyMd7QA }}
+          TOKEN: ${{ secrets.TOKEN }}
         run: python iphone_bot2.py
