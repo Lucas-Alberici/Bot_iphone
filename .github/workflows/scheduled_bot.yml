@@ -2,7 +2,7 @@ name: Rodar Bot iPhone agendado
 
 on:
   schedule:
-    - cron: '0 01,23 * * *'  # Roda às 9h e 18h de Brasília (UTC-3)
+    - cron: '0 05,23 * * *'  # Roda às 9h e 18h de Brasília (UTC-3)
   workflow_dispatch:         # Permite rodar manualmente também
 
 jobs:
