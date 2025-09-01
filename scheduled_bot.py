@@ -27,4 +27,4 @@ jobs:
         env:
           TOKEN: ${{ secrets.TOKEN }}
         run: |
-          python iphone_bot.py
+          python iphone_bot2.py
